@@ -35,13 +35,13 @@ export default function BrandWordmark({ inverse = false, compact = false, classN
 
         {/* Larger tapered sunrise arc, following the O's outer contour without crossing the navy ring. */}
         <path
-          d="M5.5 28 C2.5 17 8.5 5.2 20.8 2.1 C31 -0.5 40.2 5.5 44 16 C40.5 11.5 36.7 7.8 31.8 6.5 C20.8 3.5 9.2 12.5 8.8 24.5 Z"
+          d="M5.2 28.5 C1.8 16.9 8.3 4.8 20.7 1.8 C31.6 -0.8 41.1 5.7 44.4 16.8 C40.5 12.1 36.2 8.5 30.7 7 C20.5 4.2 9.7 12.7 8.7 23.8 Z"
           fill="url(#oryn-amber-arc)"
         />
         <path
-          d="M8.6 20.5 C10.4 11.3 18.1 5 26.3 4.7 C30.3 4.5 34.1 5.8 37.2 8.1"
+          d="M7.2 18.7 C10 9.1 18.1 3.9 26.2 4.1 C30.9 4.2 35.1 6.1 38.2 9.1"
           stroke="url(#oryn-amber-highlight)"
-          strokeWidth="1.15"
+          strokeWidth="1.5"
           strokeLinecap="round"
           opacity="0.95"
         />
