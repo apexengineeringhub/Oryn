@@ -47,55 +47,23 @@ export default function ProductsSection() {
                   isFlagship ? 'border-slate-200 shadow-lg shadow-blue-500/5 ring-1 ring-blue-500/10' : 'border-slate-200'
                 }`}>
                   {/* Top Visual Area */}
-                  <div className={`relative overflow-hidden ${isFlagship ? 'h-64' : 'h-48'} bg-slate-50 border-b border-slate-200 flex items-end justify-center`}>
+                  <div className="relative h-64 sm:h-72 overflow-hidden bg-slate-50 border-b border-slate-200 flex items-center justify-center">
                     {isFlagship ? (
-                      // Dashboard Mockup for Taxoryn
-                      <div className="w-[90%] h-[85%] bg-white rounded-t-xl shadow-[0_0_20px_rgba(0,0,0,0.08)] border border-slate-200 border-b-0 flex overflow-hidden">
-                        {/* Sidebar */}
-                        <div className="w-16 flex-shrink-0 bg-slate-50 border-r border-slate-200 flex flex-col items-center py-4 gap-4">
-                          <div className="w-6 h-6 rounded-md bg-blue-100 flex items-center justify-center">
-                            <div className="w-3 h-3 rounded-sm bg-blue-500"></div>
-                          </div>
-                          <div className="w-8 h-2 rounded bg-slate-200"></div>
-                          <div className="w-8 h-2 rounded bg-slate-200"></div>
-                          <div className="w-8 h-2 rounded bg-slate-200"></div>
-                          <div className="w-8 h-2 rounded bg-slate-200"></div>
-                        </div>
-                        {/* Main Area */}
-                        <div className="flex-1 flex flex-col p-4 gap-4 bg-slate-50/50">
-                          {/* Header */}
-                          <div className="flex justify-between items-center">
-                            <div className="w-24 h-3 rounded bg-slate-200"></div>
-                            <div className="w-6 h-6 rounded-full bg-slate-200"></div>
-                          </div>
-                          {/* Stats Row */}
-                          <div className="flex gap-3">
-                            <div className="flex-1 h-14 rounded-lg bg-white border border-slate-100 p-2.5 flex flex-col justify-between shadow-sm">
-                              <div className="w-10 h-1.5 rounded bg-slate-200"></div>
-                              <div className="w-16 h-3 rounded bg-blue-500"></div>
-                            </div>
-                            <div className="flex-1 h-14 rounded-lg bg-white border border-slate-100 p-2.5 flex flex-col justify-between shadow-sm">
-                              <div className="w-10 h-1.5 rounded bg-slate-200"></div>
-                              <div className="w-12 h-3 rounded bg-slate-700"></div>
-                            </div>
-                          </div>
-                          {/* Chart Area */}
-                          <div className="flex-1 rounded-lg bg-white border border-slate-100 p-3 flex items-end gap-2.5 shadow-sm">
-                            <div className="w-full h-[40%] bg-blue-100 rounded-t-sm"></div>
-                            <div className="w-full h-[70%] bg-blue-300 rounded-t-sm"></div>
-                            <div className="w-full h-[30%] bg-blue-100 rounded-t-sm"></div>
-                            <div className="w-full h-[85%] bg-blue-500 rounded-t-sm"></div>
-                            <div className="w-full h-[60%] bg-blue-300 rounded-t-sm"></div>
-                            <div className="w-full h-[95%] bg-blue-600 rounded-t-sm"></div>
-                          </div>
-                        </div>
+                      <div className="absolute inset-0 bg-[#f5f7fc]">
+                        <img
+                          src="/taxoryn-workspace-preview.svg"
+                          alt="Taxoryn practice workspace preview showing client management, compliance tracking, documents, tasks, upcoming compliance and recent activity"
+                          className="h-full w-full object-cover object-center"
+                          loading="lazy"
+                        />
+                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-white/10 via-transparent to-white/10" />
                       </div>
                     ) : (
-                      // Abstract preview for coming soon
+                      // Consistent, lightweight concept preview for products in development
                       <div className="absolute inset-0 flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-slate-100 px-6 py-5">
                         <div className="absolute -right-8 -top-10 h-44 w-44 rounded-full blur-3xl opacity-20" style={{ backgroundColor: product.accentColor }} />
                         <div className="absolute -bottom-12 -left-8 h-40 w-40 rounded-full blur-3xl opacity-15" style={{ backgroundColor: product.accentColor }} />
-                        <div className="relative z-10 w-full max-w-sm -rotate-2 rounded-2xl border border-white/90 bg-white/90 p-4 shadow-[0_18px_50px_-24px_rgba(15,23,42,0.3)] transition-transform duration-500 hover:rotate-0">
+                        <div className="relative z-10 w-full max-w-sm rounded-2xl border border-white/90 bg-white/95 p-4 shadow-[0_18px_50px_-24px_rgba(15,23,42,0.22)] transition-transform duration-500 hover:-translate-y-1">
                           <div className="mb-4 flex items-center justify-between border-b border-slate-100 pb-3">
                             <div className="flex items-center gap-2.5"><div className="flex h-8 w-8 items-center justify-center rounded-lg" style={{ backgroundColor: `${product.accentColor}18`, color: product.accentColor }}><Icon name={product.id === 'eduoryn' ? 'graduation' : 'briefcase'} className="h-4 w-4" /></div><div><div className="h-2.5 w-24 rounded-full bg-slate-200"/><div className="mt-1.5 h-2 w-16 rounded-full bg-slate-100"/></div></div>
                             <span className="rounded-full px-2 py-1 text-[9px] font-semibold uppercase tracking-wide" style={{ backgroundColor: `${product.accentColor}12`, color: product.accentColor }}>Preview</span>
@@ -109,7 +77,6 @@ export default function ProductsSection() {
                         </div>
                       </div>
                     )}
-                    
                     {/* Status Badge */}
                     <div className="absolute top-5 left-5 z-20">
                       {isFlagship ? (
