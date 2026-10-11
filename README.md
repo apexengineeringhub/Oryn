@@ -1,16 +1,32 @@
-# ORYN Solutions signature label refinement
+# React + TypeScript + Vite
 
-This update refines only the ORYN SOLUTIONS label in the Solutions section.
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-## Design changes
-- Uses the existing `BrandWordmark` component so the amber sunrise arc sits above the O in ORYN, not between ORYN and SOLUTIONS.
-- Makes the amber gradient arc fuller and more visible while retaining the existing brand palette.
-- Keeps SOLUTIONS in the existing blue-violet-cyan gradient, with stronger weight and refined spacing.
-- Leaves the heading, subtitle, description, and other sections unchanged.
+Currently, two official plugins are available:
 
-## Files changed
-- `src/components/SolutionsSection.tsx`
-- `src/components/BrandWordmark.tsx`
-- `src/index.css`
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-Copy these files into the matching paths in the project, commit and push to `main`, then confirm the Vercel deployment.
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the Oxlint configuration
+
+If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+
+```json
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["react", "typescript", "oxc"],
+  "options": {
+    "typeAware": true
+  },
+  "rules": {
+    "react/rules-of-hooks": "error",
+    "react/only-export-components": ["warn", { "allowConstantExport": true }]
+  }
+}
+```
+
+See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
