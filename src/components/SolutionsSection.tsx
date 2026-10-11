@@ -1,5 +1,6 @@
 import { useScrollAnimation } from '../hooks/useAnimations';
 import SolutionsProcess from './SolutionsProcess';
+import BrandWordmark from './BrandWordmark';
 
 export default function SolutionsSection() {
   const [ref, isVisible] = useScrollAnimation();
@@ -17,9 +18,10 @@ export default function SolutionsSection() {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          <span className="uppercase tracking-[0.2em] text-xs text-oryn-blue font-semibold mb-4">
-            ORYN SOLUTIONS
-          </span>
+          <div className="solutions-brand-label mb-5 inline-flex items-center" aria-label="ORYN Solutions">
+            <BrandWordmark compact className="solutions-brand-wordmark" aria-hidden="true" />
+            <span className="oryn-gradient-text solutions-brand-solutions">SOLUTIONS</span>
+          </div>
           <h2 className="text-3xl lg:text-5xl font-bold tracking-tight text-text-primary">
             Your Requirement. Our Technology.
           </h2>
