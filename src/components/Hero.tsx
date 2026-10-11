@@ -23,9 +23,9 @@ export default function Hero() {
         <img src={risingSunArt} alt="" className="h-full w-full object-cover" fetchPriority="high" />
       </div>
       <div className="oryn-hero-wash pointer-events-none absolute inset-0 z-0" aria-hidden="true" />
-      <div className="oryn-sunrise-tagline pointer-events-none absolute z-10" aria-label="Ideas today. A brighter tomorrow.">
-        <span>Ideas today.</span>
-        <span className="oryn-sunrise-tagline-second">A brighter tomorrow.</span>
+      <div className="oryn-sunrise-tagline pointer-events-none absolute z-10" aria-label="Ideas Take Shape. Progress Moves Forward.">
+        <span>Ideas Take Shape.</span>
+        <span className="oryn-sunrise-tagline-second">Progress Moves Forward.</span>
         <span className="oryn-sunrise-tagline-stroke" aria-hidden="true" />
       </div>
 
@@ -56,7 +56,7 @@ export default function Hero() {
             </div>
             <p className="oryn-mobile-tagline mt-5 text-sm font-semibold tracking-wide text-[#263a68] lg:hidden">
               <span className="mr-3 inline-block h-[2px] w-7 -translate-y-1 rounded-full bg-amber-500" aria-hidden="true" />
-              Ideas today. A brighter tomorrow.
+              Ideas Take Shape. Progress Moves Forward.
             </p>
           </div>
 
