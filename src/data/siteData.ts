@@ -53,7 +53,7 @@ export const products: Product[] = [
     name: 'Eduoryn',
     category: 'Education Management Platform',
     description:
-      'A future Oryn product designed to simplify management of schools and educational institutions.',
+      'A smarter way for schools to connect student records, teachers, attendance, fees and everyday campus operations.',
     status: 'coming-soon',
     accentColor: '#7c3aed',
     accentGradient: 'from-violet-600 to-violet-400',
@@ -63,7 +63,7 @@ export const products: Product[] = [
     name: 'Servoryn',
     category: 'Service & Business Management Platform',
     description:
-      'A future Oryn product designed to help businesses manage clients, services, operations and workflows.',
+      'A clearer way to manage customers, service requests, team schedules, invoices and day-to-day business workflows.',
     status: 'coming-soon',
     accentColor: '#10b981',
     accentGradient: 'from-emerald-600 to-emerald-400',
