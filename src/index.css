@@ -461,3 +461,29 @@ body {
 }
 
 /* Keep the O navy and legible; the amber sunrise arc sits above rather than crossing it. */
+
+
+/* Final header/hero alignment: keep the header visually separate from the sunrise artwork. */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+@media (min-width: 1024px) {
+  .oryn-hero-sunrise {
+    top: 6rem;
+  }
+
+  .oryn-sunrise-tagline {
+    top: 9rem;
+    right: clamp(2rem, 5.2vw, 5rem);
+  }
+}

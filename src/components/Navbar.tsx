@@ -61,11 +61,11 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? 'navbar-glass py-4 shadow-sm' : 'bg-transparent py-6'
+        className={`fixed inset-x-0 top-0 z-50 border-b border-slate-200/70 backdrop-blur-xl transition-all duration-300 ${
+          scrolled ? 'bg-white/95 py-3 shadow-sm' : 'bg-white/90 py-4'
         }`}
       >
-        <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
+        <div className="container mx-auto flex w-full max-w-[1600px] items-center justify-between px-5 sm:px-8 lg:px-10 2xl:px-12">
           {/* Logo */}
           <a href="#home" className="flex flex-col items-start gap-1 group" aria-label="ORYN Technology home">
             <BrandWordmark />
